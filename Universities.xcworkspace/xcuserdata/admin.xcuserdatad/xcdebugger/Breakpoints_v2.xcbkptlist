@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1DE8F381-5304-4B98-B241-37884F7CC484"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1781FDD2-60DA-409E-AE75-D3C38873B1DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchUniversities(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1781FDD2-60DA-409E-AE75-D3C38873B1DB - c3066e2e8908d479"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "377">
+               </Location>
+               <Location
+                  uuid = "1781FDD2-60DA-409E-AE75-D3C38873B1DB - c3066e2e8908d479"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A6B9C55-42D8-4FB7-BB5F-97506168BF75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchUniversities(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A6B9C55-42D8-4FB7-BB5F-97506168BF75 - b8f57a655b0a90f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "659">
+               </Location>
+               <Location
+                  uuid = "1A6B9C55-42D8-4FB7-BB5F-97506168BF75 - b8f57a655b0a90f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "645A2992-DB54-4BC4-8151-A32905AD2755"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchUniversities(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "645A2992-DB54-4BC4-8151-A32905AD2755 - b8f57a655b0a90b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "645A2992-DB54-4BC4-8151-A32905AD2755 - b8f57a655b0a90b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "249">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85179CBB-1D72-4377-8720-4F9861D0514B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchUniversities()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF08E192-ABDF-49B2-AA87-ABCCF1847B40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchUniversities(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DF08E192-ABDF-49B2-AA87-ABCCF1847B40 - b8f57a655b0a9030"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "DF08E192-ABDF-49B2-AA87-ABCCF1847B40 - b8f57a655b0a9030"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  uuid = "DF08E192-ABDF-49B2-AA87-ABCCF1847B40 - c3066e2e8908d386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "215">
+               </Location>
+               <Location
+                  uuid = "DF08E192-ABDF-49B2-AA87-ABCCF1847B40 - b8f57a655b0a9011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "526B73CA-9D73-4AAD-990F-00C9D2C2EC57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Presenter/UniversitiesListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchUniversitiesSuccess(universities:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "526B73CA-9D73-4AAD-990F-00C9D2C2EC57 - 3ad573ce0d8f7427"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListPresenterImplementation.fetchUniversitiesSuccess(universities: Swift.Array&lt;UniversitiesApp.University&gt;) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Presenter/UniversitiesListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  uuid = "526B73CA-9D73-4AAD-990F-00C9D2C2EC57 - 3ad573ce0d8f74c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListPresenterImplementation.fetchUniversitiesSuccess(universities: Swift.Array&lt;UniversitiesApp.University&gt;) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Presenter/UniversitiesListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "114">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A664B1C-B0B2-48AF-A491-EE7E1E5B8DBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/View/UniversitiesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "showError(errorMessage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A664B1C-B0B2-48AF-A491-EE7E1E5B8DBF - faab1d99f638f678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListViewController.showError(errorMessage: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/View/UniversitiesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "154">
+               </Location>
+               <Location
+                  uuid = "6A664B1C-B0B2-48AF-A491-EE7E1E5B8DBF - faab1d99f638f678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListViewController.showError(errorMessage: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/View/UniversitiesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "6A664B1C-B0B2-48AF-A491-EE7E1E5B8DBF - faab1d99f638f38c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListViewController.showError(errorMessage: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/View/UniversitiesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B95CC29F-D478-4C6E-852A-F9A3D1E87650"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "urlRequest"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B95CC29F-D478-4C6E-852A-F9A3D1E87650 - e99e2f52fb53e65f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListRepoImplementation.urlRequest.getter : Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "483">
+               </Location>
+               <Location
+                  uuid = "B95CC29F-D478-4C6E-852A-F9A3D1E87650 - e99e2f52fb53e65f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniversitiesApp.UniversitiesListRepoImplementation.urlRequest.getter : Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "692">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9615EE8-436E-4881-9B96-0C1B754DB224"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchUniversities(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F9615EE8-436E-4881-9B96-0C1B754DB224 - b8f57a655b0a9011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "F9615EE8-436E-4881-9B96-0C1B754DB224 - b8f57a655b0a9011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;UniversitiesApp.University&gt;, NetworkManager.NetworkError&gt;) -&gt; () in UniversitiesApp.UniversitiesListRepoImplementation.fetchUniversities(completion: (Swift.Optional&lt;Swift.Array&lt;UniversitiesApp.University&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversitiesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AmrFawaz/Documents/Universities/UniversitiesApp/UniversitiesApp/Modules/ModuleA/Interactor/UniversitiesListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "163">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
