@@ -17,6 +17,12 @@
 		84D8263C2BE2EC6200A857FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8263B2BE2EC6200A857FF /* SceneDelegate.swift */; };
 		84D826432BE2EC6400A857FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D826422BE2EC6400A857FF /* Assets.xcassets */; };
 		84D826462BE2EC6400A857FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D826442BE2EC6400A857FF /* LaunchScreen.storyboard */; };
+		84DAF3D42BE5780200AEDC6A /* UniversityDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAF3D32BE5780200AEDC6A /* UniversityDetailsProtocols.swift */; };
+		84DAF3D72BE5787200AEDC6A /* UniversityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAF3D52BE5787200AEDC6A /* UniversityDetailsViewController.swift */; };
+		84DAF3D82BE5787200AEDC6A /* UniversityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DAF3D62BE5787200AEDC6A /* UniversityDetailsViewController.xib */; };
+		84DAF3DA2BE578C900AEDC6A /* UniversityDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAF3D92BE578C900AEDC6A /* UniversityDetailsInteractor.swift */; };
+		84DAF3DD2BE5792F00AEDC6A /* UniversityDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAF3DC2BE5792F00AEDC6A /* UniversityDetailsRouter.swift */; };
+		84DAF3DF2BE57A1300AEDC6A /* UniversityDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAF3DE2BE57A1300AEDC6A /* UniversityDetailsPresenter.swift */; };
 		84EA8CAD2BE37FA0004BE3C4 /* AppConfigurations in Frameworks */ = {isa = PBXBuildFile; productRef = 84EA8CAC2BE37FA0004BE3C4 /* AppConfigurations */; };
 		84EA8CAF2BE37FA0004BE3C4 /* CoreInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 84EA8CAE2BE37FA0004BE3C4 /* CoreInterface */; };
 		84EA8CB12BE37FA0004BE3C4 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 84EA8CB02BE37FA0004BE3C4 /* NetworkManager */; };
@@ -39,6 +45,12 @@
 		84D826422BE2EC6400A857FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D826452BE2EC6400A857FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D826472BE2EC6400A857FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DAF3D32BE5780200AEDC6A /* UniversityDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsProtocols.swift; sourceTree = "<group>"; };
+		84DAF3D52BE5787200AEDC6A /* UniversityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsViewController.swift; sourceTree = "<group>"; };
+		84DAF3D62BE5787200AEDC6A /* UniversityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversityDetailsViewController.xib; sourceTree = "<group>"; };
+		84DAF3D92BE578C900AEDC6A /* UniversityDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsInteractor.swift; sourceTree = "<group>"; };
+		84DAF3DC2BE5792F00AEDC6A /* UniversityDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsRouter.swift; sourceTree = "<group>"; };
+		84DAF3DE2BE57A1300AEDC6A /* UniversityDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailsPresenter.swift; sourceTree = "<group>"; };
 		84EA8CB22BE390F7004BE3C4 /* UniversitiesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListRouter.swift; sourceTree = "<group>"; };
 		84EA8CBC2BE3B88F004BE3C4 /* UniversitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListViewController.swift; sourceTree = "<group>"; };
 		84EA8CBD2BE3B88F004BE3C4 /* UniversitiesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversitiesListViewController.xib; sourceTree = "<group>"; };
@@ -139,10 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				84D8265A2BE2F02300A857FF /* View */,
-				84D826592BE2F01900A857FF /* Interactor */,
 				84D826572BE2EFF700A857FF /* Presenter */,
+				84D826592BE2F01900A857FF /* Interactor */,
 				84D826562BE2EFEE00A857FF /* Entity */,
-				84D826552BE2EFE200A857FF /* Router */,
+				84DAF3D12BE577B500AEDC6A /* Router */,
+				84DAF3D22BE577C000AEDC6A /* Protocols */,
 			);
 			path = ModuleB;
 			sourceTree = "<group>";
@@ -189,13 +202,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		84D826552BE2EFE200A857FF /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		84D826562BE2EFEE00A857FF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +212,7 @@
 		84D826572BE2EFF700A857FF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				84DAF3DE2BE57A1300AEDC6A /* UniversityDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 		84D826592BE2F01900A857FF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				84DAF3D92BE578C900AEDC6A /* UniversityDetailsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -220,8 +228,26 @@
 		84D8265A2BE2F02300A857FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84DAF3D52BE5787200AEDC6A /* UniversityDetailsViewController.swift */,
+				84DAF3D62BE5787200AEDC6A /* UniversityDetailsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84DAF3D12BE577B500AEDC6A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84DAF3DC2BE5792F00AEDC6A /* UniversityDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		84DAF3D22BE577C000AEDC6A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84DAF3D32BE5780200AEDC6A /* UniversityDetailsProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +315,7 @@
 			files = (
 				84D826462BE2EC6400A857FF /* LaunchScreen.storyboard in Resources */,
 				84CD92382BE2FCBC0067C604 /* UniversityCell.xib in Resources */,
+				84DAF3D82BE5787200AEDC6A /* UniversityDetailsViewController.xib in Resources */,
 				84EA8CBF2BE3B88F004BE3C4 /* UniversitiesListViewController.xib in Resources */,
 				84D826432BE2EC6400A857FF /* Assets.xcassets in Resources */,
 			);
@@ -301,14 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DAF3D42BE5780200AEDC6A /* UniversityDetailsProtocols.swift in Sources */,
 				84EA8CBE2BE3B88F004BE3C4 /* UniversitiesListViewController.swift in Sources */,
 				84461F892BE3712200F40820 /* UniversitiesListPresenter.swift in Sources */,
+				84DAF3D72BE5787200AEDC6A /* UniversityDetailsViewController.swift in Sources */,
 				84461F8B2BE3720800F40820 /* UniversitiesListInteractor.swift in Sources */,
+				84DAF3DD2BE5792F00AEDC6A /* UniversityDetailsRouter.swift in Sources */,
 				84D8263A2BE2EC6200A857FF /* AppDelegate.swift in Sources */,
 				84D8263C2BE2EC6200A857FF /* SceneDelegate.swift in Sources */,
+				843E415A2BE56A1700FF0DE3 /* RealmUniversity.swift in Sources */,
 				84EA8CB32BE390F7004BE3C4 /* UniversitiesListRouter.swift in Sources */,
+				84DAF3DA2BE578C900AEDC6A /* UniversityDetailsInteractor.swift in Sources */,
 				84CD92372BE2FCBC0067C604 /* UniversityCell.swift in Sources */,
 				84461F842BE36D6600F40820 /* University.swift in Sources */,
+				84DAF3DF2BE57A1300AEDC6A /* UniversityDetailsPresenter.swift in Sources */,
 				84461F872BE36F8200F40820 /* UniversitiesListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

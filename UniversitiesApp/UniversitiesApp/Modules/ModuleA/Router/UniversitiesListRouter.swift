@@ -22,4 +22,9 @@ final class UniversitiesListRouterImplementation: UniversitiesListRouter {
         interactor.output = presenter
         return view
     }
+
+    func navigateToUniversityDetails(university: University) {
+        let universityDetailsViewController = UniversityDetailsRouterImplementation().build(university: university)
+        viewController?.navigationController?.pushViewController(universityDetailsViewController, animated: true)
+    }
 }

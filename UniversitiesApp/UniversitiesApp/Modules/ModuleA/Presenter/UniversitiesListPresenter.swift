@@ -26,6 +26,11 @@ final class UniversitiesListPresenterImplementation: UniversitiesListPresenter{
         self.view = view
         interactor.fetchUniversities()
     }
+
+    func didTapUniversity(at index: Int) {
+        let university = universitiesList[index]
+        router.navigateToUniversityDetails(university: university)
+    }
 }
 
 extension UniversitiesListPresenterImplementation: UniversitiesListInteractorOutput {

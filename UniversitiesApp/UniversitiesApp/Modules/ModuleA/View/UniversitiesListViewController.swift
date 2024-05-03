@@ -30,6 +30,7 @@ class UniversitiesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Universities List"
         presenter.viewDidLoad(view: self)
 
         startLoadingAnimation()
@@ -64,6 +65,7 @@ extension UniversitiesListViewController: UITableViewDataSource {
 
 extension UniversitiesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didTapUniversity(at: indexPath.row)
     }
 }
 
@@ -77,10 +79,13 @@ extension UniversitiesListViewController: UniversitiesListView {
     }
 
     func showError(errorMessage: String?) {
-        let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-
-        present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            
+            let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     func startLoadingAnimation() {

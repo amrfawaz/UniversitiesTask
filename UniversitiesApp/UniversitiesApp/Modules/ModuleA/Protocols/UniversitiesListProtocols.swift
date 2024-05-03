@@ -18,6 +18,7 @@ protocol UniversitiesListView: AnyObject {
 protocol UniversitiesListPresenter: AnyObject {
     var universitiesList: [University] { get }
     func viewDidLoad(view: UniversitiesListView)
+    func didTapUniversity(at index: Int)
 }
 
 protocol UniversitiesListInteractorInput: AnyObject {
@@ -29,7 +30,9 @@ protocol UniversitiesListInteractorOutput: AnyObject {
     func fetchUniversitiesFailure(error: Error?)
 }
 
-protocol UniversitiesListRouter: AnyObject {}
+protocol UniversitiesListRouter: AnyObject {
+    func navigateToUniversityDetails(university: University)
+}
 
 protocol UniversitiesListRepo: AnyObject {
     func fetchUniversities(completion: @escaping ([University]?, Error?) -> Void)
