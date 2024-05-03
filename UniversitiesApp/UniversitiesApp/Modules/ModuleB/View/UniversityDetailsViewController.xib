@@ -49,17 +49,31 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-Os-Nj7">
+                            <rect key="frame" x="20" y="64" width="353" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CQz-ch-KMw"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                            <connections>
+                                <action selector="didTapRefreshButton:" destination="-1" eventType="touchUpInside" id="d79-6h-AeW"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="D0s-xw-1T6" firstAttribute="leading" secondItem="C57-kQ-3v3" secondAttribute="leading" constant="16" id="4bT-Pw-Bfv"/>
+                        <constraint firstAttribute="trailing" secondItem="gZy-Os-Nj7" secondAttribute="trailing" constant="20" id="9Xe-0q-fSW"/>
                         <constraint firstAttribute="trailing" secondItem="D0s-xw-1T6" secondAttribute="trailing" constant="16" id="HOb-MM-tbx"/>
                         <constraint firstItem="D0s-xw-1T6" firstAttribute="top" secondItem="C57-kQ-3v3" secondAttribute="top" constant="20" id="JoK-N7-Zuy"/>
                         <constraint firstItem="hne-0j-faE" firstAttribute="top" secondItem="fpB-Hm-gwr" secondAttribute="bottom" constant="8" id="PbA-A1-9aA"/>
+                        <constraint firstItem="gZy-Os-Nj7" firstAttribute="leading" secondItem="C57-kQ-3v3" secondAttribute="leading" constant="20" id="QUl-K7-cbt"/>
                         <constraint firstItem="hne-0j-faE" firstAttribute="trailing" secondItem="fpB-Hm-gwr" secondAttribute="trailing" id="RHu-GX-8Ah"/>
                         <constraint firstAttribute="trailing" secondItem="fpB-Hm-gwr" secondAttribute="trailing" constant="16" id="TCa-ge-UGq"/>
                         <constraint firstItem="zcx-O0-W1m" firstAttribute="top" secondItem="hne-0j-faE" secondAttribute="bottom" constant="8" id="ZVl-0t-XhY"/>
                         <constraint firstItem="fpB-Hm-gwr" firstAttribute="top" secondItem="D0s-xw-1T6" secondAttribute="bottom" constant="8" id="dQB-cB-Tga"/>
+                        <constraint firstItem="gZy-Os-Nj7" firstAttribute="top" secondItem="zcx-O0-W1m" secondAttribute="bottom" constant="20" id="f6s-d8-6im"/>
                         <constraint firstItem="zcx-O0-W1m" firstAttribute="leading" secondItem="hne-0j-faE" secondAttribute="leading" id="fAd-jp-ppX"/>
                         <constraint firstItem="fpB-Hm-gwr" firstAttribute="leading" secondItem="C57-kQ-3v3" secondAttribute="leading" constant="32" id="h7R-pw-fpC"/>
                         <constraint firstItem="zcx-O0-W1m" firstAttribute="trailing" secondItem="hne-0j-faE" secondAttribute="trailing" id="oVJ-Ce-e5S"/>

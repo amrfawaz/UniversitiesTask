@@ -32,10 +32,14 @@ class UniversitiesListViewController: UIViewController {
         super.viewDidLoad()
         title = "Universities List"
         presenter.viewDidLoad(view: self)
-
-        startLoadingAnimation()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        startLoadingAnimation()
+        presenter.viewWillAppear()
     }
 }
 

@@ -42,6 +42,10 @@ final class UniversityDetailsPresenterImplementation: UniversityDetailsPresenter
         self.view = view
         view.show()
     }
+
+    func didTapRefresh() {
+        router.back()
+    }
 }
 
 extension UniversityDetailsPresenterImplementation: UniversityDetailsInteractorOutput {}

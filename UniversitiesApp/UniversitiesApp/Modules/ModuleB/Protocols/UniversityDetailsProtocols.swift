@@ -14,6 +14,7 @@ protocol UniversityDetailsView: AnyObject {
 
 protocol UniversityDetailsPresenter: AnyObject {
     func viewDidLoad(view: UniversityDetailsView)
+    func didTapRefresh()
     var universityName: String { get }
     var universityCountry: String { get }
     var universityState: String { get }
@@ -24,6 +25,8 @@ protocol UniversityDetailsInteractorInput: AnyObject {}
 
 protocol UniversityDetailsInteractorOutput: AnyObject {}
 
-protocol UniversityDetailsRouter: AnyObject {}
+protocol UniversityDetailsRouter: AnyObject {
+    func back()
+}
 
 protocol UniversityDetailsRepo: AnyObject {}

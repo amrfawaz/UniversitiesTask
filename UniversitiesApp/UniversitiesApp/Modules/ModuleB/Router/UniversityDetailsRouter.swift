@@ -22,4 +22,8 @@ final class UniversityDetailsRouterImplementation: UniversityDetailsRouter {
         interactor.output = presenter
         return view
     }
+
+    func back() {
+        viewController?.navigationController?.popViewController(animated: true)
+    }
 }

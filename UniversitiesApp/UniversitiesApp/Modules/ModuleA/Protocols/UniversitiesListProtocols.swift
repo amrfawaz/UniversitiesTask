@@ -18,6 +18,7 @@ protocol UniversitiesListView: AnyObject {
 protocol UniversitiesListPresenter: AnyObject {
     var universitiesList: [University] { get }
     func viewDidLoad(view: UniversitiesListView)
+    func viewWillAppear()
     func didTapUniversity(at index: Int)
 }
 

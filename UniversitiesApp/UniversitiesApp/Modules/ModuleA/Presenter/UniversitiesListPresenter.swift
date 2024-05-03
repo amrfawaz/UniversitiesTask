@@ -24,6 +24,9 @@ final class UniversitiesListPresenterImplementation: UniversitiesListPresenter{
 
     func viewDidLoad(view: UniversitiesListView) {
         self.view = view
+    }
+
+    func viewWillAppear() {
         interactor.fetchUniversities()
     }
 

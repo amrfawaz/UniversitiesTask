@@ -31,6 +31,10 @@ class UniversityDetailsViewController: UIViewController {
         title = "University Details"
         presenter.viewDidLoad(view: self)
     }
+
+    @IBAction func didTapRefreshButton(_ sender: Any) {
+        presenter.didTapRefresh()
+    }
 }
 
 extension UniversityDetailsViewController: UniversityDetailsView {
