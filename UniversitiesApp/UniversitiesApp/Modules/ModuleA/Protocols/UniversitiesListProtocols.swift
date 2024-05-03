@@ -5,9 +5,6 @@
 //  Created by AmrFawaz on 02/05/2024.
 //
 
-import UIKit
-import NetworkManager
-
 protocol UniversitiesListView: AnyObject {
     func show()
     func showError(errorMessage: String?)

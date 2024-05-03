@@ -10,7 +10,7 @@ import UIKit
 
 final class UniversityDetailsRouterImplementation: UniversityDetailsRouter {
     weak var viewController: UniversityDetailsViewController?
-    
+
     func build(university: University) -> UIViewController {
         let router = UniversityDetailsRouterImplementation()
         let repo = UniversityDetailsRepoImplementation()

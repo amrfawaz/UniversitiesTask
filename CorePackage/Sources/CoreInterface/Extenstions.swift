@@ -12,7 +12,10 @@ public extension UITableViewCell {
     /// - Warning: Name Of the class should be the same as the name of Cell Identifier
     class func register(on tableView: UITableView) {
         tableView.register(
-            UINib(nibName: self.className, bundle: nil),
+            UINib(
+                nibName: self.className,
+                bundle: nil
+            ),
             forCellReuseIdentifier: self.className
         )
     }

@@ -10,8 +10,9 @@ import NetworkManager
 import AppConfigurations
 
 final class UniversitiesListInteractor: UniversitiesListInteractorInput {
-    private let repo: UniversitiesListRepo
     weak var output: UniversitiesListInteractorOutput?
+
+    private let repo: UniversitiesListRepo
 
     init(repo: UniversitiesListRepo) {
         self.repo = repo
@@ -33,7 +34,6 @@ final class UniversitiesListRepoImplementation: UniversitiesListRepo {
         case search = "/search"
     }
 
-    
     func fetchUniversities(completion: @escaping ([University]?, Error?) -> Void) {
         guard let request = urlRequest
         else { return }

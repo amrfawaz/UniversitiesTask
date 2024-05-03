@@ -83,24 +83,22 @@ extension UniversitiesListViewController: UniversitiesListView {
     }
 
     func showError(errorMessage: String?) {
-        DispatchQueue.main.async {
-            
+        DispatchQueue.main.async { [weak self] in
             let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-            
-            self.present(alert, animated: true, completion: nil)
+            self?.present(alert, animated: true, completion: nil)
         }
     }
 
     func startLoadingAnimation() {
-        DispatchQueue.main.async {
-            self.activityIndicator.startAnimating()
+        DispatchQueue.main.async { [weak self] in
+            self?.activityIndicator.startAnimating()
         }
     }
     
     func stopLoadingAnimation() {
-        DispatchQueue.main.async {
-            self.activityIndicator.stopAnimating()
+        DispatchQueue.main.async { [weak self] in
+            self?.activityIndicator.stopAnimating()
         }
     }
     

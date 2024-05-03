@@ -5,9 +5,6 @@
 //  Created by AmrFawaz on 03/05/2024.
 //
 
-import UIKit
-import NetworkManager
-
 protocol UniversityDetailsView: AnyObject {
     func show()
 }

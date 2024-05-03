@@ -8,8 +8,9 @@
 import Foundation
 
 final class UniversityDetailsInteractor: UniversityDetailsInteractorInput {
-    private let repo: UniversityDetailsRepo
     weak var output: UniversityDetailsInteractorOutput?
+
+    private let repo: UniversityDetailsRepo
 
     init(repo: UniversityDetailsRepo) {
         self.repo = repo

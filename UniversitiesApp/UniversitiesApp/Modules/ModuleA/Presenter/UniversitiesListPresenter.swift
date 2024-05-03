@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import UIKit
 
-final class UniversitiesListPresenterImplementation: UniversitiesListPresenter{
-    private weak var view: UniversitiesListView?
+final class UniversitiesListPresenterImplementation: UniversitiesListPresenter {
     private let router: UniversitiesListRouter
     private let interactor: UniversitiesListInteractorInput
+
+    private weak var view: UniversitiesListView?
     private(set) var universitiesList = [University]()
 
     init(

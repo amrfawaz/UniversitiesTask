@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import UIKit
 
 final class UniversityDetailsPresenterImplementation: UniversityDetailsPresenter {
     private weak var view: UniversityDetailsView?
+
     private let university: University
     private let router: UniversityDetailsRouter
     private let interactor: UniversityDetailsInteractorInput
@@ -17,7 +17,6 @@ final class UniversityDetailsPresenterImplementation: UniversityDetailsPresenter
     var universityName: String {
         university.name
     }
-
     var universityCountry: String {
         university.country
     }
