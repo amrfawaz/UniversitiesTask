@@ -13,24 +13,42 @@ import RealmManager
 final class UniversitiesListInteractor: UniversitiesListInteractorInput {
     weak var output: UniversitiesListInteractorOutput?
 
-    private let repo: UniversitiesListRepo
+    private let networkٍRepository: UniversitiesListNetworkRepository
+    private let realmRepository: UniversitiesListRealmRepository
 
-    init(repo: UniversitiesListRepo) {
-        self.repo = repo
+    init(
+        networkٍRepository: UniversitiesListNetworkRepository,
+        realmRepository: UniversitiesListRealmRepository
+    ) {
+        self.networkٍRepository = networkٍRepository
+        self.realmRepository = realmRepository
     }
 
     func fetchUniversities() {
-        repo.fetchUniversities { universities, error in
-            if let universitiesList = universities {
-                self.output?.fetchUniversitiesSuccess(universities: universitiesList)
+        networkٍRepository.fetchUniversities { [weak self] universities, error in
+            if let universities {
+                DispatchQueue.main.async {
+                    self?.realmRepository.cacheUniversities(universities: universities)
+                }
+                self?.output?.fetchUniversitiesSuccess(universities: universities)
             } else {
-                self.output?.fetchUniversitiesFailure(error: error)
+                if let error {
+                    DispatchQueue.main.async {
+                        self?.realmRepository.fetchCachedUniversities { universities, realmError in
+                            if let universities {
+                                self?.output?.fetchUniversitiesSuccess(universities: universities)
+                            } else {
+                                self?.output?.fetchUniversitiesFailure(error: error)
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-final class UniversitiesListRepoImplementation: UniversitiesListRepo {
+final class UniversitiesListNetworkRepositoryImplementation: UniversitiesListNetworkRepository {
     private enum UniversitiesListEndPoint: String {
         case search = "/search"
     }
@@ -42,26 +60,15 @@ final class UniversitiesListRepoImplementation: UniversitiesListRepo {
         NetworkManager.shared.fetchData(request: request) { (result: Result<[University], NetworkError>) in
             switch result {
             case .success(let data):
-                DispatchQueue.main.async {
-                    self.cacheUniversities(universities: data)
-                }
                 completion(data, nil)
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    let universities = self.fetchCachedUniversities()
-                    
-                    if universities.count > 0 {
-                        completion(universities, nil)
-                    } else {
-                        completion(nil, error)
-                    }
-                }
+            case .failure(let networkError):
+                completion(nil, networkError)
             }
         }
     }
 }
 
-extension UniversitiesListRepoImplementation: UniversitiesListRealmRepo {
+class UniversitiesListRealmRepositoryImplementation: UniversitiesListRealmRepository {
     func cacheUniversities(universities: [University]) {
         let realmObjects = universities.map { university in
             return RealmUniversity(university: university)
@@ -69,16 +76,16 @@ extension UniversitiesListRepoImplementation: UniversitiesListRealmRepo {
         RealmManager.shared.save(realmObjects)
     }
     
-    func fetchCachedUniversities() -> [University] {
+    func fetchCachedUniversities(completion: @escaping ([University]?, Error?) -> Void) {
         let realmObjects: [RealmUniversity] = RealmManager.shared.load(RealmUniversity.self)
         let universities = realmObjects.map { realmUniversity in
             return University(realmUniversity: realmUniversity)
         }
-        return universities
+        completion(universities, nil)
     }
 }
 
-extension UniversitiesListRepoImplementation: Request {
+extension UniversitiesListNetworkRepositoryImplementation: Request {
     var parametrs: Any? {
         ["country": "United Arab Emirates"]
     }

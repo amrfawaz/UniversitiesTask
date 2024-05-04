@@ -13,8 +13,9 @@ final class UniversitiesListRouterImplementation: UniversitiesListRouter {
     
     func build() -> UIViewController {
         let router = UniversitiesListRouterImplementation()
-        let repo = UniversitiesListRepoImplementation()
-        let interactor = UniversitiesListInteractor(repo: repo)
+        let networkٍRepository = UniversitiesListNetworkRepositoryImplementation()
+        let realmRepository = UniversitiesListRealmRepositoryImplementation()
+        let interactor = UniversitiesListInteractor(networkٍRepository: networkٍRepository, realmRepository: realmRepository)
         let presenter = UniversitiesListPresenterImplementation(router: router, interactor: interactor)
         let view = UniversitiesListViewController(presenter: presenter)
 
