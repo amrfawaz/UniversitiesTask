@@ -18,9 +18,12 @@ let package = Package(
         .library(
             name: "NetworkManager",
             targets: ["NetworkManager"]),
-
+        .library(
+            name: "RealmManager",
+            targets: ["RealmManager"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/realm/realm-cocoa", from: "10.5.0")
     ],
     targets: [
         .target(
@@ -34,6 +37,12 @@ let package = Package(
         .target(
             name: "NetworkManager",
             dependencies: []
+        ),
+        .target(
+            name: "RealmManager",
+            dependencies: [
+                .product(name: "RealmSwift", package: "realm-cocoa")
+            ]
         ),
         .testTarget(
             name: "NetworkManagerTests",

@@ -8,6 +8,7 @@
 import Foundation
 import NetworkManager
 import AppConfigurations
+import RealmManager
 
 final class UniversitiesListInteractor: UniversitiesListInteractorInput {
     weak var output: UniversitiesListInteractorOutput?
@@ -41,11 +42,39 @@ final class UniversitiesListRepoImplementation: UniversitiesListRepo {
         NetworkManager.shared.fetchData(request: request) { (result: Result<[University], NetworkError>) in
             switch result {
             case .success(let data):
+                DispatchQueue.main.async {
+                    self.cacheUniversities(universities: data)
+                }
                 completion(data, nil)
             case .failure(let error):
-                completion(nil, error)
+                DispatchQueue.main.async {
+                    let universities = self.fetchCachedUniversities()
+                    
+                    if universities.count > 0 {
+                        completion(universities, nil)
+                    } else {
+                        completion(nil, error)
+                    }
+                }
             }
         }
+    }
+}
+
+extension UniversitiesListRepoImplementation: UniversitiesListRealmRepo {
+    func cacheUniversities(universities: [University]) {
+        let realmObjects = universities.map { university in
+            return RealmUniversity(university: university)
+        }
+        RealmManager.shared.save(realmObjects)
+    }
+    
+    func fetchCachedUniversities() -> [University] {
+        let realmObjects: [RealmUniversity] = RealmManager.shared.load(RealmUniversity.self)
+        let universities = realmObjects.map { realmUniversity in
+            return University(realmUniversity: realmUniversity)
+        }
+        return universities
     }
 }
 

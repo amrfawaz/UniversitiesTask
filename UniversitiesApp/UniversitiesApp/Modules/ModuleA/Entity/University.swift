@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct University: Codable {
+struct University: Codable, Identifiable {
+    let id: String = NSUUID().uuidString
     let name: String
     let state: String?
     let country: String
@@ -15,6 +16,7 @@ struct University: Codable {
     let webPages: [String]
 
     enum CodingKeys: String, CodingKey {
+        case id
         case name
         case country
         case state = "state-province"

@@ -35,3 +35,7 @@ protocol UniversitiesListRouter: AnyObject {
 protocol UniversitiesListRepo: AnyObject {
     func fetchUniversities(completion: @escaping ([University]?, Error?) -> Void)
 }
+protocol UniversitiesListRealmRepo: AnyObject {
+    func cacheUniversities(universities: [University])
+    func fetchCachedUniversities() -> [University]
+}

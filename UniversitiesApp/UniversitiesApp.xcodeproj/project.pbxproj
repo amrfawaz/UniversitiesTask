@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8416AF412BE5CD7000396600 /* RealmManager in Frameworks */ = {isa = PBXBuildFile; productRef = 8416AF402BE5CD7000396600 /* RealmManager */; };
+		8416AF432BE5CE6C00396600 /* RealmUniversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416AF422BE5CE6C00396600 /* RealmUniversity.swift */; };
 		84461F842BE36D6600F40820 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84461F832BE36D6600F40820 /* University.swift */; };
 		84461F872BE36F8200F40820 /* UniversitiesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84461F862BE36F8200F40820 /* UniversitiesListProtocols.swift */; };
 		84461F892BE3712200F40820 /* UniversitiesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84461F882BE3712200F40820 /* UniversitiesListPresenter.swift */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8416AF422BE5CE6C00396600 /* RealmUniversity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUniversity.swift; sourceTree = "<group>"; };
 		84461F832BE36D6600F40820 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		84461F862BE36F8200F40820 /* UniversitiesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListProtocols.swift; sourceTree = "<group>"; };
 		84461F882BE3712200F40820 /* UniversitiesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListPresenter.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8416AF412BE5CD7000396600 /* RealmManager in Frameworks */,
 				84EA8CAF2BE37FA0004BE3C4 /* CoreInterface in Frameworks */,
 				84EA8CAD2BE37FA0004BE3C4 /* AppConfigurations in Frameworks */,
 				84EA8CB12BE37FA0004BE3C4 /* NetworkManager in Frameworks */,
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				84461F832BE36D6600F40820 /* University.swift */,
+				8416AF422BE5CE6C00396600 /* RealmUniversity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				84EA8CAC2BE37FA0004BE3C4 /* AppConfigurations */,
 				84EA8CAE2BE37FA0004BE3C4 /* CoreInterface */,
 				84EA8CB02BE37FA0004BE3C4 /* NetworkManager */,
+				8416AF402BE5CD7000396600 /* RealmManager */,
 			);
 			productName = UniversitiesApp;
 			productReference = 84D826362BE2EC6200A857FF /* UniversitiesApp.app */;
@@ -333,10 +339,10 @@
 				84461F892BE3712200F40820 /* UniversitiesListPresenter.swift in Sources */,
 				84DAF3D72BE5787200AEDC6A /* UniversityDetailsViewController.swift in Sources */,
 				84461F8B2BE3720800F40820 /* UniversitiesListInteractor.swift in Sources */,
+				8416AF432BE5CE6C00396600 /* RealmUniversity.swift in Sources */,
 				84DAF3DD2BE5792F00AEDC6A /* UniversityDetailsRouter.swift in Sources */,
 				84D8263A2BE2EC6200A857FF /* AppDelegate.swift in Sources */,
 				84D8263C2BE2EC6200A857FF /* SceneDelegate.swift in Sources */,
-				843E415A2BE56A1700FF0DE3 /* RealmUniversity.swift in Sources */,
 				84EA8CB32BE390F7004BE3C4 /* UniversitiesListRouter.swift in Sources */,
 				84DAF3DA2BE578C900AEDC6A /* UniversityDetailsInteractor.swift in Sources */,
 				84CD92372BE2FCBC0067C604 /* UniversityCell.swift in Sources */,
@@ -557,6 +563,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8416AF402BE5CD7000396600 /* RealmManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealmManager;
+		};
 		84EA8CAC2BE37FA0004BE3C4 /* AppConfigurations */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppConfigurations;
